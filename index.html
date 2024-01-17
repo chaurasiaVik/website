@@ -58,15 +58,26 @@
     <meta name="msapplication-config" content="https://vikashchaurasia.github.io/images/browserconfig.xml?v=M44lzPylqQ">
     <meta name="theme-color" content="#ffffff">
     <link rel="stylesheet" href="assets/css/academicons.css" />
-    <script
+    <!-- <script
         type="text/x-mathjax-config"> MathJax.Hub.Config({ TeX: { equationNumbers: { autoNumber: "all" } } }); </script>
     <script
         type="text/x-mathjax-config"> MathJax.Hub.Config({ tex2jax: { inlineMath: [ ['$','$'], ["\\(","\\)"] ], processEscapes: true } }); </script>
     <script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"
-        type="text/javascript"></script> <!-- end custom head snippets -->
+        type="text/javascript"></script> end custom head snippets -->
+        <script>
+            MathJax = {
+              tex: {
+                inlineMath: [['$', '$'], ['\\(', '\\)']]
+              }
+            };
+            </script>
+            <script id="MathJax-script" async
+              src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js">
+            </script>
 </head>
 
 <body>
+    
     <!--[if lt IE 9]><div class="notice--danger align-center" style="margin: 0;">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</div><![endif]-->
     <div class="masthead">
         <div class="masthead__inner-wrap">
@@ -158,68 +169,46 @@
                             src="images/me_w_sunglasses.JPG" alt="image-left" width="160" /> <img src="images/me.png"
                             alt="image-left" width="320" /></p> -->
                     <!-- ![image-left](/images/me.png){: width="300" } ![image-left](/images/me_w_sunglasses.jpg){: width="200" } ![image-right](/files/gifs/knotFandB.gif){: width="200" } -->
-                    <p>My primary focus lies in the intricate study of elastic curves and surfaces, emphasizing their
-                        relationship with differential geometry. Additionally, I explore the complexities of nonlinear
-                        ordinary differential equations within the field of Elasticity.</p>
-                    <p>My recent work revolves around developing finite-difference schemes for shape optimization based
-                        on elastic energy. This endeavor entails precise formulation of physical constraints and
-                        boundary conditions. To bring these concepts to life, I create mathematical software in
-                        languages such as Matlab, Python, or Rust, bridging theory with practical numerical solutions.
-                    </p>
-                    <p>I derive immense satisfaction from crafting well-informed initial hypotheses, which, when
-                        pursued, lead to the discovery of nontrivial solutions. This expands the horizons of elasticity
-                        and shape optimization.</p>
-                    <p>My passion extends to creating photorealistic images and animations of optimized shapes,
-                        accomplished through the synergy of Python and Blender. Additionally, I develop web-based
-                        interactive visualizations, recognizing the value of effective visualization tools in enhancing
-                        the understanding of our results, illuminating the intricate world of elasticity and its
-                        applications in shape optimization.</p>
+
+                    I am a mechanical engineer by training and an applied mathematician driven by curiosity. My interests lie in both basic and applied research questions arising in the fields of calculus of variation, solid mechanics, biophysics, and numerical methods, particularly focused on mechanics-driven constrained optimization.
+                        <br>
+                        <br>
+
+                    As a Postdoctoral Research Associate with <a href="https://groups.oist.jp/mmmu/eliot-fried/" target="_blank">Prof. Eliot Fried</a> in <a
+                    href="https://groups.oist.jp/mmmu" target="_blank">Mechanics and Materials Unit</a> at <a
+                    href="https://www.oist.jp/" target="_blank">Okinawa Institute of Science and Technology (OIST)</a>, our primary focus is on exploring the folding and mobility of unstretchable surfaces for deployable structures. In particular, we work on constructing M&ouml;bius and orientable bands from unstretchable helicoids. We are also working on finding the rheological properties of energy-minimization-driven shapes of virus particles. My work utilizes a blend of variational calculus, differential geometry, and computational modeling tools like MATLAB, Python, and C++.
+                    <br>
+                    <br>
+                    
+                    I am enthusiastic about creating photorealistic images and animations of optimized shapes,
+                    accomplished through the synergy of Python and Blender. Additionally, I develop web-based
+                    interactive visualizations, recognizing the value of effective visualization tools in enhancing
+                    the understanding of our results and their
+                    applications in shape optimization. Please see the <a href="">gallery</a> and <a href="">interactive visualization </a> for some of my works.  You are most welcomed to <a href="mailto:vikash.chaurasia2@oist.jp" target="_blank">contact me</a> for any questions, chat, and collaborations. 
                     <details>
                         <summary class="notice--info"><b>More about me</b></summary>
                         <p class="notice--info">
-                            I am currently a Postdoctoral Research Associate in the <a
-                                href="https://groups.oist.jp/mmmu">Mechanics and Materials Unit</a> at <a
-                                href="https://www.oist.jp/">Okinawa Institute of Science and Technology (OIST)</a>. I
-                            received my Bachelors and Masters degrees in <a href="https://www.iitk.ac.in/me/">Mechanical
-                                Engineering</a> from <a href="https://www.iitk.ac.in/">IIT Kanpur</a>. During my
-                            masters, I worked on developing energy preserving symplectic algorithms for discrete
-                            Hamiltonian systems. I got my Ph.D. in <a href="https://www.me.uh.edu/"> Mechanical
-                                Engineering</a> at the <a href="https://www.uh.edu/">University of Houston</a>.
-                            <br /><br />My main research interest is the development of variational frameworks and their
-                            application to energy based optimal shapes of curves and surfaces. Unstretchable material,
-                            virus modeling, interfacial mechanics.<br /> dd.
-
-                            A differential geometer by training, I received my PhD from Texas Tech
-                            University under the guidance of <a href="http://www.math.ttu.edu/~mtoda/">Magdalena
-                                Toda</a>, with co-advisors <a href="http://www.math.ttu.edu/~eaulisa/">Eugenio
-                                Aulisa</a> and <a href="https://www.math.uci.edu/~hungtt1/">Hung Tran</a>. At this time,
-                            I applied techniques from Riemannian geometry, variational calculus, and differential
-                            topology to study functionals involving surface curvature, with the ultimate goal of
-                            understanding their extrema. Moreover, I was (and still am) interested in understanding the
-                            possible immersions of a given topological space inside another, including what
-                            configurations are “preferred” (usually energy-minimizing) in this case. I also spent quite
-                            a bit of time thinking about the computational modeling of geometric objects, sparking a
-                            standing interest in computer graphics which can be seen in the various simulation videos
-                            found on the <a href="gallery/index.html">Gallery</a> page. <br /><br /> Catalyzed by an NSF
-                            internship at Oak Ridge National Lab (featured <a
-                                href="https://orise.orau.gov/nsf-msgi/profiles/gruber.html">here!</a>) toward the end of
-                            graduate school where I worked with <a
-                                href="https://sites.google.com/site/robertbridgeshomepage/">Robert Bridges</a>, I became
-                            involved post-PhD in scientific algorithm development for dimension reduction, function
-                            approximation, and the reduced-order modeling of PDEs. This led to a postdoctoral
-                            appointment with <a href="https://people.sc.fsu.edu/~mgunzburger/">Max Gunzburger</a> at FSU
-                            working on data-driven strategies for predictive tasks related to ocean modeling. At the
-                            same time as my application-driven interests were shifting, my purer “side project” work
-                            also moved in the direction of rigidity results for geometric objects constrained by
-                            curvature conditions. Now, I maintain active interests in several areas of mathematics,
-                            computer science, and engineering. <br /><br /> Broad research keywords which tend to
-                            interest me include: scientific machine learning, computational and discrete geometry,
-                            conservation laws, reduced-order modeling, manifold learning, harmonic maps, surface
-                            immersions, and integrability problems. A more detailed description of my interests can be
-                            found in my <a href="files/Research_Statement.pdf">academic research statement</a> (current
-                            as of 9/21).</p>
-                        <!-- Lately, my focus is primarily on developing structure-informed numerical methods for scientific applications. Doing this generally involves identifying/reasoning about some abstract mathematical structure which is important for a particular phenomenon, formulating a smart discretization (based on e.g. a finite element or artificial neural network backbone) which takes this structure into account, and writing mathematical software in Python or C++ which implements the proposed discretization. Over time, I've found that my preferred "flavor" of research problem creates ample opportunity for algebraic reasoning, flashy visuals, and short "punchy" arguments which are characteristic of my personal style. <br><br> -->
+                          
+                            During my Ph.D. with <a
+                            href="https://scholar.google.co.jp/scholar?hl=en&as_sdt=0%2C5&as_vis=1&q=yi-chao+chen++continuum+mechanics&btnG="
+                            target="_blank">Prof. Yi-Chao Chen</a> at <a href="https://www.me.uh.edu/" target="_blank"> University of Houston</a>, we developed a variational framework to study the equilibrium shape and stability of two charged elastic curves constrained to a surface. This framework was inspired by reverse cholesterol transport, wherein the high-density lipoproteins (HDL) particles constituted by charged Apo-lipoproteins attached to a spherical core are responsible for maintaining the cholesterol level in the human body. Additionally, we worked on the effect of surface tension imbalance on arbitrarily shaped floating bodies, unraveling the mechanism utilized by water-walking insects such as Rove beetles.
+        
+                            <br>
+                            <br>
+                         
+                            I received my Bachelors and Masters degrees in <a href="https://www.iitk.ac.in/me/">Mechanical
+                            Engineering</a> from <a href="https://www.iitk.ac.in/">IIT Kanpur</a>. During my
+                        master's, I worked on developing energy-preserving symplectic algorithms for discrete
+                        Hamiltonian systems. 
+        
+                        <br />
+                        <br /> 
+         
+                        Broad research keywords encapsulating my interests include computational mechanics, biophysics, differential geometry, numerical methods, mathematical modeling, and the biomechanics of lipoproteins and viral dynamics. A more detailed description of my research interests can be found in my <a href="files/Research_Statement.pdf">academic research statement</a> (current
+                        as of 1/2024).</p>
+                     
                     </details>
+
                     <p><img src="files/gifs/knot_to_unknot.gif" alt="image-right" class="align-right" width="200" />
                         <br /><br /> Below are some coarse categories containing my work <br /><br />
                     </p>
@@ -318,10 +307,12 @@
                                 href="https://chaurasiavik.github.io/mobius_visualization/" target="_blank">M&ouml;bius
                                 bands</a> and <a href="https://chaurasiavik.github.io/bates_visualization/"
                                 target="_blank"> Orientable bands</a> using our framework.
-
+                            <br>
+                            <br>
                             <img src="images/knot_eversion_rev2.jpg" style="max-height: 400px " align="center" />
                             <br>
                             <br>
+                            Four representative states of the everting motion of a (5,2) knotted M&ouml;bius band.
                             <br /><br /> (Joint with <a href="https://groups.oist.jp/mmmu/eliot-fried/"
                                 target="_blank">Prof. Eliot Fried.</a> )
                         </p>
@@ -376,7 +367,7 @@
                             <br>
                             A few possible arrangements of charged curves, shown with red color, on a rigid sphere  are shown in the figure above.
                             While the curves represent the Apo-lipoproteins, the rigid sphere models the core of
-                            high-density lipoprotien particles.
+                            high-density lipoprotein particles.
                             <br>
                             <br>
                             <strong> Key ﬁndings:</strong> For the given charge, length, and bending rigidity of the
@@ -389,7 +380,7 @@
                             <br /><br /> (Joint with <a href="https://groups.oist.jp/mmmu/eliot-fried/"
                                 target="_blank">Prof. Eliot Fried</a>  and <a
                                 href="https://scholar.google.co.jp/scholar?hl=en&as_sdt=0%2C5&as_vis=1&q=yi-chao+chen++continuum+mechanics&btnG="
-                                target="_blank">Prof. Yi-Chao Chen.)</a>
+                                target="_blank">Prof. Yi-Chao Chen</a>.)
                         </p>
                         <h3 id="covid-charge-heterogeneity">CORONAVIRUS PEPLOMER CHARGE HETEROGENEITY <a href="https://pubs.aip.org/aip/pof/article/35/3/037125/2882155/Coronavirus-peplomer-charge-heterogeneity" target="_blank"
                                 class="btn btn--info btn--small align-right">Link</a>  </h3>
@@ -410,7 +401,7 @@
                             <br /><br /> (Joint with <a href="https://groups.oist.jp/mmmu/eliot-fried/"
                             target="_blank">Prof. Eliot Fried</a>, <a href="https://scholar.google.com/citations?user=3-v9NzAAAAAJ&hl=en" target="_blank">Mona Kanso</a>,  and <a
                             href="https://www.unr.edu/me/about/people/alan-jeffrey-giacomin"
-                            target="_blank">Prof. A.J. Giacomin.)</a>
+                            target="_blank">Prof. A.J. Giacomin</a>.)
                         </p>
                       
                         <h3 id="covid-pleomorphism">Coronavirus pleomorphism <a href="https://pubs.aip.org/aip/pof/article/34/6/063101/2846764" target="_blank"
@@ -432,7 +423,7 @@
                             <br /><br /> (Joint with <a href="https://groups.oist.jp/mmmu/eliot-fried/"
                             target="_blank">Prof. Eliot Fried</a>, <a href="https://scholar.google.com/citations?user=3-v9NzAAAAAJ&hl=en" target="_blank">Mona Kanso</a>,  and <a
                             href="https://www.unr.edu/me/about/people/alan-jeffrey-giacomin"
-                            target="_blank">Prof. A.J. Giacomin.)</a>
+                            target="_blank">Prof. A.J. Giacomin</a>.)
                         </p>
                       
                         <h3 id="covid-bulb-shape">Peplomer bulb shape and coronavirus rotational diffusivity <a href="https://pubs.aip.org/aip/pof/article/33/3/033115/1064042"
@@ -454,10 +445,10 @@
                             <br /><br /> (Joint with <a href="https://groups.oist.jp/mmmu/eliot-fried/"
                             target="_blank">Prof. Eliot Fried</a>, <a href="https://scholar.google.com/citations?user=3-v9NzAAAAAJ&hl=en" target="_blank">Mona Kanso</a>,  and <a
                             href="https://www.unr.edu/me/about/people/alan-jeffrey-giacomin"
-                            target="_blank">Prof. A.J. Giacomin.)</a>
+                            target="_blank">Prof. A.J. Giacomin</a>.)
                         </p>
                       
-                        <h3 id="surface-tension">Peplomer bulb shape and coronavirus rotational diffusivity <a href="https://www.cambridge.org/core/journals/journal-of-fluid-mechanics/article/effect-of-a-surface-tension-imbalance-on-a-partly-submerged-cylinder/F2C597292793A3785BB87FFAD484DF0D" target="_blank"
+                        <h3 id="surface-tension">Effect of a surface tension imbalance on a partly submerged cylinder <a href="https://www.cambridge.org/core/journals/journal-of-fluid-mechanics/article/effect-of-a-surface-tension-imbalance-on-a-partly-submerged-cylinder/F2C597292793A3785BB87FFAD484DF0D" target="_blank"
                                 class="btn btn--info btn--small align-right">Link</a>  </h3>
                         <p class="notice--info"> 
                             <strong>Abstract:</strong>  
@@ -480,7 +471,7 @@
                             <br /><br /> (Joint with <a href="https://groups.oist.jp/mmmu/eliot-fried/"
                             target="_blank">Prof. Eliot Fried</a>   and <a
                             href="https://sites.google.com/view/stoffel-d-janssens/home"
-                            target="_blank">S. D. Janssens)</a> (lead author).
+                            target="_blank">S. D. Janssens </a> (lead author).
                         </p>
 
                          
