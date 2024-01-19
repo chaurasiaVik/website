@@ -64,7 +64,12 @@
         type="text/x-mathjax-config"> MathJax.Hub.Config({ tex2jax: { inlineMath: [ ['$','$'], ["\\(","\\)"] ], processEscapes: true } }); </script>
     <script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"
         type="text/javascript"></script> <!-- end custom head snippets -->
-
+        <script>
+            window.MathJax = {
+              loader: {load: ['[tex]/boldsymbol']},
+              tex: {packages: {'[+]': ['boldsymbol']}}
+            };
+          </script>
         <style>
      
             .thumbnail {
@@ -281,6 +286,38 @@
       <img src="./images/covid_charge_heterogeneity.png" alt="bifurcation" class="thumbnail" />
     </a>
     <div class="pswp-caption-content"> left: mass spectroscopy measurement of charge heterogeneity of spike proteins on SARS-CoV-2 spike proteins   by <a href="https://pubs.acs.org/doi/10.1021/jacs.1c00353/" target="_blank"> Miller et al. (2006)</a>. right:  rigid-rod bead  model of spike proteins with charge heterogeneity, shown with different colors, by <a href="https://pubs.aip.org/aip/pof/article/35/3/037125/2882155/Coronavirus-peplomer-charge-heterogeneity" target=""> Chaurasia et al. (2023)</a>. </div>
+  </div>
+
+<div class="pswp-gallery__item">
+    <a  
+      href="./images/schematic_helicoid_to_mobius.png" 
+      data-pswp-width="1442" 
+      data-pswp-height="667" 
+      target="_blank">
+      <img src="./images/schematic_helicoid_to_mobius.png" alt="bifurcation" class="thumbnail" />
+    </a>
+    <div class="pswp-caption-content"> folding of an unstretchable circular helicoid, parameterized by \(\hat{\boldsymbol{x}} \) in to a \(3\pi\) twisted M&ouml;bius band, parameterized by  \(\hat{\boldsymbol{y}} \) through an isometric mapping \(\eta\),   see  <a href="https://link.springer.com/article/10.1007/s10659-023-10008-x" target=""> Chaurasia and Fried (2023)</a> for more details </div>
+  </div>
+
+<div class="pswp-gallery__item">
+    <a  
+      href="./images/helicoid_to_knotted_1.png" 
+      data-pswp-width="1842" 
+      data-pswp-height="796" 
+      target="_blank">
+      <img src="./images/helicoid_to_knotted_1.png" alt="bifurcation" class="thumbnail" />
+    </a>
+    <div class="pswp-caption-content"> knotted M&ouml;bius bands from folding of unstretchable helicoids which are saddle solutions of bending energy </div>
+  </div>
+<div class="pswp-gallery__item">
+    <a  
+      href="./images/helicoid_to_saddle_unknot.png" 
+      data-pswp-width="1842" 
+      data-pswp-height="796" 
+      target="_blank">
+      <img src="./images/helicoid_to_saddle_unknot.png" alt="bifurcation" class="thumbnail" />
+    </a>
+    <div class="pswp-caption-content">  unknotted M&ouml;bius bands from folding of unstretchable helicoids which are saddle solutions of bending energy </div>
   </div>
 
     
