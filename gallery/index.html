@@ -8,7 +8,7 @@
     <meta property="og:site_name" content="Vikash Chaurasia">
     <meta property="og:title" content="Gallery">
     <link rel="canonical" href="index.html">
-    <meta property="og:url" content="https://github.com/chaurasiaVik/website/gallery">
+    <meta property="og:url" content="https://github.com/chaurasiaVik/website/">
     <script
         type="application/ld+json"> { "@context" : "http://schema.org", "@type" : "Person", "name" : "Vikash Chaurasia", "url" : "https://agrubertx.github.io", "sameAs" : null } </script>
     <!-- end SEO -->
@@ -20,7 +20,6 @@
     <script> document.documentElement.className = document.documentElement.className.replace(/\bno-js\b/g, '') + ' js '; </script>
     <!-- For all browsers -->
     <link rel="stylesheet" href="../assets/css/main.css">
-    <link rel="stylesheet" href="https://unpkg.com/photoswipe-dynamic-caption-plugin/photoswipe-dynamic-caption-plugin.css">
     <meta http-equiv="cleartype" content="on"> <!-- start custom head snippets -->
     <link rel="apple-touch-icon" sizes="57x57"
         href="https://agrubertx.github.io/images/apple-touch-icon-57x57.png?v=M44lzPylqQ">
@@ -56,14 +55,53 @@
     <meta name="msapplication-config" content="https://agrubertx.github.io/images/browserconfig.xml?v=M44lzPylqQ">
     <meta name="theme-color" content="#ffffff">
     <link rel="stylesheet" href="../assets/css/academicons.css" />
-
-    <script src="index.js"></script>
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/photoswipe@5.3.0/dist/photoswipe.css"> -->
+    <link rel="stylesheet" href="./photoswipe.css">
+    <link rel="stylesheet" href="./photoswipe-dynamic-caption-plugin.css">
     <script
         type="text/x-mathjax-config"> MathJax.Hub.Config({ TeX: { equationNumbers: { autoNumber: "all" } } }); </script>
     <script
         type="text/x-mathjax-config"> MathJax.Hub.Config({ tex2jax: { inlineMath: [ ['$','$'], ["\\(","\\)"] ], processEscapes: true } }); </script>
     <script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"
         type="text/javascript"></script> <!-- end custom head snippets -->
+
+        <style>
+     
+            .thumbnail {
+             width: 150px;  /* or any other size you prefer for thumbnails */
+             height: auto;  /* maintains the aspect ratio */
+             display: block;
+             margin: 0 auto; /* centers the image if the parent container is wider */
+         }
+             .pswp-gallery__item {
+               margin: 0 4px 4px 0;
+             }
+             .pswp-gallery__item img {
+               display: block;
+             }
+             .pswp-gallery {
+               max-width: 650px;
+               padding: 0 50px 50px;
+               background: #eee;
+               position: relative;
+               display: flex;
+               flex-wrap: wrap;
+             }
+             .pswp__dynamic-caption {
+               color: #fff;
+               width: 100%;
+             }
+             .pswp__dynamic-caption a {
+               color: #fff;
+               text-decoration: underline;
+             }
+             .pswp-gallery img {
+    width: auto !important;
+    height: auto !important;
+}
+
+           </style>
+
 </head>
 
 <body>
@@ -80,7 +118,7 @@
                         <!-- <li class="masthead__menu-item"><a href="../talks/index.html">Talks</a></li> -->
                         <!-- <li class="masthead__menu-item"><a href="../teaching/index.html">Teaching</a></li>
                         <li class="masthead__menu-item"><a href="../code.html">Code</a></li> -->
-                        <li class="masthead__menu-item"><a href="../interactive_visualization/index.html">Interactive visualization</a></li>
+                        <li class="masthead__menu-item"><a href="../interactive_visualization/index.html">Interactive Visualization</a></li>
                         <li class="masthead__menu-item"><a href="index.html">Gallery</a></li>
                     </ul>
                     <ul class="hidden-links hidden"></ul>
@@ -116,7 +154,7 @@
                       
                     
                       
-                        <li><a href="https://github.com/vikash-chaurasia1989" rel="nofollow noopener noreferrer me" itemprop="sameAs"><i class="fab fa-fw fa-github" aria-hidden="true"></i><span class="label">GitHub</span></a></li>
+                        <li><a href="https://github.com/chaurasiaVik" rel="nofollow noopener noreferrer me" itemprop="sameAs"><i class="fab fa-fw fa-github" aria-hidden="true"></i><span class="label">GitHub</span></a></li>
                       
                     
                       
@@ -165,55 +203,80 @@
     </div> -->
 
 
-<!-- 
-////////////////////////////////////////////////////////////////
-//////////////////////// gallery using photo swipe///////////////////////////////////
-//////////////////////////////////////////////////////////////// -->
-<!-- 
 
+
+  <div class="pswp-gallery" id="gallery">
+    <div class="pswp-gallery__item">
+      <a  
+        href="./images/charged_elastic_multiple_solution.png" 
+        data-pswp-width="1868" 
+        data-pswp-height="1083" 
+        target="_blank">
+        <img src="./images/charged_elastic_multiple_solution.png" alt="charted_elastic_multiple_soluton" class="thumbnail" />
+      </a>
+      <div class="pswp-caption-content">  two charged, elastic loops, attached to a 
+        rigid sphere can adopt multiple equilibrium configurations, depending on the length of the loops
+        , and intra- and inter-loop interactions</div>
+    </div>
+  
+    <div class="pswp-gallery__item">
+      <a  
+        href="https://cdn.photoswipe.com/photoswipe-demo-images/photos/3/img-2500.jpg" 
+        data-pswp-width="2500" 
+        data-pswp-height="1666" 
+        target="_blank">
+        <img src="https://cdn.photoswipe.com/photoswipe-demo-images/photos/3/img-200.jpg" alt="Demo image 2" />
+      </a>
+      <div class="pswp-caption-content">
+        <b>Vivamus elementum (2016)</b><br>ullamcorper ultricies nisi, nam eget dui, etiam rhoncus, maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero<br>32 x 37 x 1.8 inches
+      </div>
+    </div>
+  
     
-////////////////////////////////////////////////////////////////
-////////////////////////////////////////////////////////////////
-//////////////////////////////////////////////////////////////// -->
-
-<div class="pswp-gallery" id="my-gallery">
-    <a href="images/charged_elastic_multiple_solution.png" data-pswp-width="1024" data-pswp-height="768">
-        <img src="images/charged_elastic_multiple_solution.png" alt="" />
-        <span class="pswp-caption-content">Two charged, elastic loops, attached to a 
-            rigid sphere can adopt multiple equilibrium configurations, depending on the length of the loops
-            , and intra- and inter-loop interactions.
-        </span>
-      </a>
-      
-    <a href="images/charged_loop_bifurcation.pdf" data-pswp-width="1024" data-pswp-height="768">
-        <img src="images/effect_of_inter_repulsion.png" alt="" />
-        <span class="pswp-caption-content">Caption content</span>
-      </a>
-    <a href="images/charged_loop_bifurcation.pdf" data-pswp-width="1024" data-pswp-height="768">
-        <img src="images/effect_of_inter_repulsion.png" alt="" />
-        <span class="pswp-caption-content">Caption content</span>
-      </a>
-    <a href="images/charged_loop_bifurcation.pdf" data-pswp-width="1024" data-pswp-height="768">
-        <img src="images/effect_of_inter_repulsion.png" alt="" />
-        <span class="pswp-caption-content">Caption content</span>
-      </a>
-    <a href="images/charged_loop_bifurcation.pdf" data-pswp-width="1024" data-pswp-height="768">
-        <img src="images/effect_of_inter_repulsion.png" alt="" />
-        <span class="pswp-caption-content">Caption content</span>
-      </a>
   </div>
 
+    <script type="module">
+      import PhotoSwipeLightbox from 'https://cdn.jsdelivr.net/npm/photoswipe@5.3.0/dist/photoswipe-lightbox.esm.js';
+      import PhotoSwipeDynamicCaption from './photoswipe-dynamic-caption-plugin.esm.js';
+
+      const smallScreenPadding = {
+        top: 0, bottom: 0, left: 0, right: 0
+      };
+      const largeScreenPadding = {
+        top: 30, bottom: 30, left: 0, right: 0
+      };
+      const lightbox = new PhotoSwipeLightbox({
+        gallerySelector: '#gallery',
+        childSelector: '.pswp-gallery__item',
+        
+        // optionaly adjust viewport
+        paddingFn: (viewportSize) => {
+          return viewportSize.x < 700 ? smallScreenPadding : largeScreenPadding
+        },
+        pswpModule: () => import('https://cdn.jsdelivr.net/npm/photoswipe@5.3.0/dist/photoswipe.esm.js')
+      });
+
+      const captionPlugin = new PhotoSwipeDynamicCaption(lightbox, {
+        mobileLayoutBreakpoint: 700,
+        type: 'auto',
+        mobileCaptionOverlapRatio: 1
+      });
+
+      lightbox.init();
+      </script>
 
 
+    <!-- ///////////////////////////////////////////////////
+    ////////////////// footer /////////////////////////
+    /////////////////////////////////////////////////// -->
 
-    
     <div class="page__footer">
         <footer> <!-- start custom footer snippets --> <!-- <a href="/sitemap/">Sitemap</a> -->
             <!-- end custom footer snippets -->
             <div class="page__footer-follow">
                 <ul class="social-icons">
                     <li><strong>Follow:</strong></li>
-                    <li><a href="https://github.com/chaurasiaVik"><i class="fab fa-github" aria-hidden="true"></i>
+                    <li><a href="http://github.com/chaurasiaVik"><i class="fab fa-github" aria-hidden="true"></i>
                             GitHub</a></li>
                     <li><a href="../feed.xml"><i class="fa fa-fw fa-rss-square" aria-hidden="true"></i> Feed</a></li>
                 </ul>
@@ -234,5 +297,3 @@
 </body>
 
 </html>
-
-https://github.com/chaurasiaVik
